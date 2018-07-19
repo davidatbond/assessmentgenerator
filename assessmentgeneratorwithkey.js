@@ -96,8 +96,8 @@ var s2clist = [
 ];
 
 var q4alist = [
-    '1Y.According to AS4000 what actions should the Contractor have taken within 6 weeks of the contract date?',
-    'YY.According to AS4000 what actions should the Principal have taken within 6 weeks of the contract date?'
+    '1Y.According to AS4000 what actions should the Contractor have taken within 6 weeks after the contract date?',
+    'YY.According to AS4000 what actions should the Principal have taken within 6 weeks after the contract date?'
 ];
 
 var q4blist = [
@@ -168,7 +168,7 @@ var q6list = [
 		<li>the Principal has not made any payment of moneys due for more than two months</li> \
 		<li>two weeks ago, in accordance with Cl 39.8 you gave the Principal a notice to show cause within eight days of the notice</li> \
 		<li>the Principal has not replied</li></ul> \
-	<p>Prepare a notice to the Principal informing it that the Contractor is suspending the whole of WUC, and advising of the potential consequences of the Principal’s failure to show cause.</p>'
+	<p>Prepare a notice to the Principal informing it that the Contractor is suspending the whole of WUC, and advising of the potential consequences of the Principal&#39;s failure to show cause.</p>'
 ];
 
 var q7list = [
@@ -185,7 +185,7 @@ var q7list = [
 	'EO.an explicit statement defining a substantial breach by the Principal that is caused by a failure of the Superintendent',
 	'OC.whether the Superintendent has the authority to prevent the Contractor from removing it&#39s own equipment from the site once it is no longer required',
 	'ZX.who is responsible for the cost of rectifying damage classified under Cl 15.1 d)',
-	'0Ethe purpose for which the Principal is permitted to copy the documents in Cl 8.3 a)',
+	'0E.the purpose for which the Principal is permitted to copy the documents in Cl 8.3 a)',
 	'QP.how the work required to rectify damage caused by an excepted risk is valued',
 	'40.the Contractor&#39s obligation to avoid interference with the ability of pedestrians to move past the site',
 	'SC.what measures the Contractor can take if the Superintendent does not respond as required under Cl 34.6 after receiving the Contractor&#39ss request for issue of a certificate of practical completion'
@@ -206,8 +206,8 @@ var q8list = [
 ];
 
 var q9list = [
-    'VG.in escrow',
-	'B1.time bar',
+    'VG.In escrow',
+	'B1.Time bar',
     'IJ.Prescribed notice',
     '3D.Contract sum'
 ];
@@ -286,7 +286,7 @@ q8div.innerHTML += '<ol type="a"><li>' + injectq8list.getItem() + "</li><li>" + 
 var q9div = document.getElementById('q9');
 var injectq9list = new RandomList(q9list);
 // Retrieve items randomly and display for Task 9;
-q9div.innerHTML += '<p>Investigate the term <strong>' + injectq9list.getItem() + '</strong> and then describe <strong><em>in your own words</em></strong>:';
+q9div.innerHTML += '<ol type="a"><li><p>Investigate the term <strong>' + injectq9list.getItem() + '</strong>, then</li><li>Describe <strong><em>in your own words</em></strong>:';
 
 // Add examID
 var examiddiv = document.getElementById('examid');
