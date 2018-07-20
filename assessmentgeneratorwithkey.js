@@ -260,7 +260,7 @@ var q5div = document.getElementById('q5');
 var injectq5list = new RandomList(q5list);
 // Retrieve items randomly and display for Task 5;
 q5div.innerHTML += injectq5list.getItem() + "</p>";
-'s'
+
 // Construct task 6
 var q6div = document.getElementById('q6');
 var injectq6list = new RandomList(q6list);
